@@ -6,8 +6,8 @@ inLanguage: null
 starred: true
 keywords: []
 description: "What You Can Do About Bad Breath By Peter Jaret, Reviewed by Michael Friedman, DDS on March 22, 2015 It's easy to improve your breath and keep your teeth and gu"
-datePublished: '2015-10-13T20:00:45.121Z'
-dateModified: '2015-10-13T19:44:45.787Z'
+datePublished: '2015-10-13T19:44:43.650Z'
+dateModified: '2015-10-13T19:44:08.789Z'
 author: []
 title: ''
 sourcePath: _posts/2015-10-13-what-you-can-do-about-bad-breath-by-peter-jaret-reviewed-by.md
@@ -32,4 +32,9 @@ What You Can Do About Bad Breath By Peter Jaret, Reviewed by Michael Friedman, D
 3\. Scrape your tongue. The coating that normally forms on your tongue can be a host for smelly bacteria. To get rid of them, gently brush your tongue with your toothbrush. If your brush is too big to comfortably reach the back of your tongue, try a scraper. "They're designed specifically to apply even pressure across the surface of the tongue area. This removes bacteria, food debris, and dead cells that brushing alone can't  take care of," says hygienist Pamela L. Quinones, past president of the American Dental Hygienists' Association. 
 
 4\. Avoid foods that sour your breath. Onions and garlic are big offenders. But brushing after you eat them doesn't help. The substances that cause their bad smells make their way into your bloodstream and travel to your lungs, where you breathe them out, says dentist Richard Price, DMD, a spokesperson for the American Dental Association. The best way to stop the problem? Don't eat them, or at least avoid them before you go to work or see friends.
+null
+null
+null
+null
+null
 ![](https://the-grid-user-content.s3-us-west-2.amazonaws.com/c48fb6c0-e2cf-4a27-a54b-2fb0c1e31245.JPG)
