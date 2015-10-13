@@ -1,6 +1,6 @@
 name: GFD
 favicon: null
-layout_spectrum: 0.79664
+layout_spectrum: 0.49205
 title: Glow Family Dental
 cta:
   domain: null
@@ -23,8 +23,8 @@ color:
     - '#9794c9'
   brandStrength: 0.8125
   lightness: 0.5
-  saturation: 0.6875
-  rhythmicContrast: 0.25
+  saturation: 0.5
+  rhythmicContrast: 0.5
 purpose:
   - name: awareness
     item: null
