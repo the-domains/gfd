@@ -6,8 +6,8 @@ inLanguage: null
 starred: true
 keywords: []
 description: "What You Can Do About Bad Breath By Peter Jaret, Reviewed by Michael Friedman, DDS on March 22, 2015 It's easy to improve your breath and keep your teeth and gu"
-datePublished: '2015-10-13T19:30:46.780Z'
-dateModified: '2015-10-13T19:30:32.874Z'
+datePublished: '2015-10-13T20:00:45.121Z'
+dateModified: '2015-10-13T19:44:45.787Z'
 author: []
 title: ''
 sourcePath: _posts/2015-10-13-what-you-can-do-about-bad-breath-by-peter-jaret-reviewed-by.md
