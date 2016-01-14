@@ -1,4 +1,4 @@
-<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>GFD</title><link href="../rss.xml" title="Glow Family Dental feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.16.25"><meta name="the-grid-solution" content="9181940a-b9bb-459d-ac18-53364223da3b"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
+<!DOCTYPE HTML><html class="exporting wf-loading"><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/><title>GFD</title><link href="../rss.xml" title="Glow Family Dental feed" rel="alternate" type="application/rss+xml"/><meta name="generator" content="The Grid taylor/0.17.3"><meta name="the-grid-solution" content="32befba3-96c1-4593-b3a6-fdf2d91321f0"><style href="./css/scale/mini.css" media="(max-width: 19.9376em)" rel="stylesheet">@media (max-width: 15.625em){html{font-size:3.09375em !important}}
 @media (min-width: 15.6875em)and (max-width: 15.75em){	html{font-size:3.28125em !important}}
 @media (min-width: 15.8125em)and (max-width: 16.25em){	html{font-size:3.375em !important}}
 @media (min-width: 16.3125em)and (max-width: 16.6875em){html{font-size:3.46875em !important}}
@@ -202,6 +202,14 @@ body {
 }
 .stack {
   z-index: 1;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+}
+.group,
+.aside,
+.decoration {
+  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
 }
 picture {
   display: inline-block;
@@ -250,6 +258,9 @@ a:active {
   transition: color 0.1s ease-in, background-color 0.1s ease-out;
   -webkit-transition: color 0.1s ease-in, background-color 0.1s ease-out;
 }
+a.aside {
+  display: inline-block;
+}
 html.exporting a {
   transition: none;
 }
@@ -259,11 +270,21 @@ html.exporting a {
 .media > a {
   display: inline-block;
 }
+.media iframe {
+  transition: 0.3s opacity ease-in;
+  -webkit-transition: 0.3s opacity ease-in;
+}
 h1 a,
 h2 a,
 h3 a {
   font-weight: inherit;
   letter-spacing: inherit;
+}
+a {
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .text-decoration {
   -webkit-box-decoration-break: clone;
@@ -277,36 +298,50 @@ h3 a {
   margin-left: 1.5em;
 }
 .decoration {
-  position: relative;
   pointer-events: none;
+}
+.svg {
+  position: relative;
   background-color: currentColor;
 }
-.decoration > svg {
+.svg > svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.decoration.connector > svg {
+.svg.connector > svg {
   width: 109%;
   height: 109%;
   margin-left: -2%;
 }
-.decoration path,
-.decoration ellipse,
-.decoration rect,
-.decoration polygon,
-.decoration circle {
+.svg path,
+.svg ellipse,
+.svg rect,
+.svg polygon,
+.svg circle {
   fill: currentColor;
 }
-.decoration mpath,
-.decoration line,
-.decoration polyline {
+.svg mpath,
+.svg line,
+.svg polyline {
   stroke: currentColor;
 }
-.svg.decoration {
+.svg {
   background-color: transparent;
+}
+.revealed .play.svg:after {
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: currentColor;
+  content: "";
 }
 .colors-style-aside-border .publisher,
 .colors-style-aside-border .author {
@@ -1059,7 +1094,7 @@ wbr.w1800{ display: block }
  #u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-3 {
 display: none;
 }
-}</style></head><body><div class="layout-system rust mobile" id="page-9162c24c-2b7c-4266-adce-2ae77a41e88a"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_short_paragraph w_short_text w_long_paragraph w_long_text layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-3-l-one"></div><style id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-color">body{background-color: rgba(17, 22, 39, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_decoration w_headline w_title w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-nav"><div kind="group" index="heading" class="group heading group heading" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-nav-g-heading-t-headline-a">Glow Family Dental</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack column i first_chapter w_decoration w_paragraph w_text w_short_paragraph w_short_text stack column" itemid="8903592d-e512-414c-86df-83b295b31449" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-8903592d-e512-414c-86df-83b295b31449"><div kind="group" index="column" class="group column group column" id="u-8903592d-e512-414c-86df-83b295b31449-g-column"><div kind="text" index="paragraph" class="text-decoration short short_paragraph short_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-8903592d-e512-414c-86df-83b295b31449-g-column-t-paragraph"><p><span class="first-letter">K</span>aren Contreras </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_decoration w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="f3920cac-4d4a-4037-ba1c-953af47742f9" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-f3920cac-4d4a-4037-ba1c-953af47742f9"><div kind="group" index="column" class="group column group column" id="u-f3920cac-4d4a-4037-ba1c-953af47742f9-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-f3920cac-4d4a-4037-ba1c-953af47742f9-g-column-t-paragraph"><p><span class="first-letter"> </span>Office Administrator I've worked at this practice as front <wbr class="w480 w960"></wbr>office manager since 1999. I can't <wbr class="w481 w961 w1799"></wbr>wait to see our patients <wbr class="w480 w960"></wbr>each <wbr class="w1800"></wbr>day so that we can catch up! I consider them to be <wbr class="w480 w960"></wbr>friends <wbr class="w1799"></wbr>and <wbr class="w481 w961"></wbr>enjoy hearing about their families, sharing <wbr class="w480 w960"></wbr>pictures and <wbr class="w1800"></wbr>helping them in any way that I <wbr class="w1799"></wbr>can. I <wbr class="w481 w961"></wbr>really enjoy <wbr class="w480 w960"></wbr>making people happy! My husband Greg and I moved to <wbr class="w480 w960"></wbr>Duncanville in <wbr class="w1799 w1800"></wbr>1981 <wbr class="w481 w961"></wbr>from Southern California. We raised 3 <wbr class="w480 w960"></wbr>children here, all of whom graduated from <wbr class="w481 w961 w1799"></wbr>Duncanville High <wbr class="w480 w960"></wbr>School. My 2 <wbr class="w1800"></wbr>oldest children, Alyssa and Evan, graduated <wbr class="w480 w960"></wbr>from college <wbr class="w481 w961"></wbr>and <wbr class="w1799"></wbr>have families of their own. Greg and I now <wbr class="w480 w960"></wbr>have 3 <wbr class="w1800"></wbr>grandsons, Cameron, Coy Brice and <wbr class="w481 w961"></wbr>Gabe <wbr class="w1799"></wbr>who we <wbr class="w480 w960"></wbr>spend as much time with as possible. Our youngest son, <wbr class="w480 w960"></wbr>Brice, <wbr class="w1800"></wbr>attended <wbr class="w481 w961"></wbr>college <wbr class="w1799"></wbr>where he played for the soccer team. <wbr class="w480 w960"></wbr>Last year he was tragically killed by a drunk <wbr class="w481 w961"></wbr>driver. <wbr class="w1799"></wbr>Our family <wbr class="w480 w960"></wbr>will <wbr class="w1800"></wbr>forever miss him. I love my job and the people I work with <wbr class="w480 w960"></wbr>because we <wbr class="w481 w961"></wbr>all <wbr class="w1799"></wbr>work toward the common goal of <wbr class="w480 w960 w1800"></wbr>EXCELLENCE. The quality of dentistry that Dr. Martinez <wbr class="w480 w481 w960 w961 w1799"></wbr>demonstrates every day makes me so proud to say that I <wbr class="w480 w960"></wbr>work <wbr class="w1800"></wbr>for him at this office! </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_decoration w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="3fd63ef5-8160-4a95-849d-840ed42be57d" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-3fd63ef5-8160-4a95-849d-840ed42be57d"><div kind="group" index="column" class="group column group column" id="u-3fd63ef5-8160-4a95-849d-840ed42be57d-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-3fd63ef5-8160-4a95-849d-840ed42be57d-g-column-t-paragraph"><p><span class="first-letter"> </span>Lori Cernosek Hygienist I am both proud and blessed to have <wbr class="w480 w960"></wbr>been a part of this <wbr class="w481 w961 w1799"></wbr>extraordinary Practice for the past 26 <wbr class="w480 w960 w1800"></wbr>years. I never imagined being at one office this long, <wbr class="w481 w961 w1799"></wbr>now I <wbr class="w480 w960"></wbr>am very excited to continue my career with Dr. Martinez. I <wbr class="w480 w960 w1800"></wbr>expect this next chapter to <wbr class="w481 w961 w1799"></wbr>be as enjoyable and fulfilling as <wbr class="w480 w960"></wbr>the previous years have been. I love my work, staff and <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>patients immensely, which makes coming to the office a joy. I <wbr class="w480 w960"></wbr>graduated from Baylor <wbr class="w481 w961 w1799"></wbr>College of Dentistry with a Bachelor <wbr class="w480 w960 w1800"></wbr>of Science in Dental Hygiene in 1985. My husband, <wbr class="w1799"></wbr>Ben, <wbr class="w481 w961"></wbr>and I <wbr class="w480 w960"></wbr>have been married for 28 wonderful years. We have two <wbr class="w480 w960 w1800"></wbr>amazing grown children. <wbr class="w1799"></wbr>Our <wbr class="w481 w961"></wbr>oldest, Cole, lives and works in <wbr class="w480 w960"></wbr>Houston in the petroleum industry. Abby, now a <wbr class="w1799"></wbr>graduate of <wbr class="w480 w481 w960 w961 w1800"></wbr>the University Of Texas Nursing School, works for a children's <wbr class="w480 w960"></wbr>hospital in <wbr class="w1799"></wbr>Austin. I enjoy <wbr class="w481 w961"></wbr>spending time with family and <wbr class="w480 w960 w1800"></wbr>friends and just about anything outdoors, <wbr class="w1799"></wbr>especially <wbr class="w480 w481 w960 w961"></wbr>gardening. I strive to give my patients the best possible <wbr class="w480 w960"></wbr>experience <wbr class="w1800"></wbr>through <wbr class="w1799"></wbr>quality care and <wbr class="w481 w961"></wbr>service. Our staff is <wbr class="w480 w960"></wbr>committed to every patient that walks through our <wbr class="w1799"></wbr>door. A <wbr class="w480 w960"></wbr>happy and <wbr class="w481 w961"></wbr>healthy <wbr class="w1800"></wbr>smile is truly the best compliment I can <wbr class="w480 w960"></wbr>ever receive. </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_decoration w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="b35dca97-6c20-4aae-a741-4e1749bb8087" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-b35dca97-6c20-4aae-a741-4e1749bb8087"><div kind="group" index="column" class="group column group column" id="u-b35dca97-6c20-4aae-a741-4e1749bb8087-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-b35dca97-6c20-4aae-a741-4e1749bb8087-g-column-t-paragraph"><p><span class="first-letter"> </span>Judy Bean </p><p><span class="first-letter"> </span><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Treatment Coordinator I&#x2019;m on my second &#x201C;Tour of Duty&#x201D; with <wbr class="w480 w960"></wbr>Dr. Malone. I first worked with <wbr class="w481 w961 w1799"></wbr>him in 1992, but left in 1997 <wbr class="w1800"></wbr>to <wbr class="w480 w960"></wbr>pursue my own business. In 2001, I received a phone call <wbr class="w480 w481 w960 w961 w1799"></wbr>from Dr. Malone begging me to come back and I&#x2019;ve been <wbr class="w480 w960 w1800"></wbr>assisting him ever since! I have <wbr class="w481 w961 w1799"></wbr>been blessed with four <wbr class="w480 w960"></wbr>wonderful children, who continue to make me proud every <wbr class="w480 w960"></wbr>day. In <wbr class="w481 w961 w1799 w1800"></wbr>addition, I am &#x201C;Nana&#x201D; to five grandchildren, four rough <wbr class="w480 w960"></wbr>and tumble boys, Kaleb, Graham, Ty <wbr class="w481 w961 w1799"></wbr>and Knox and my little <wbr class="w480 w960"></wbr>princess <wbr class="w1800"></wbr>Austin. They are the light of my life! I work here <wbr class="w480 w960"></wbr>because I <wbr class="w481 w961 w1799"></wbr>love it! We have fun every day and I love everyone I <wbr class="w480 w960"></wbr>work with. <wbr class="w1800"></wbr>I&#x2019;ve been a dental assistant <wbr class="w481 w961 w1799"></wbr>since I was 16 years <wbr class="w480 w960"></wbr>old. I can honestly say, &#x201C;Dr. Malone is the very best&#x201D;. Now <wbr class="w480 w960"></wbr>that we have <wbr class="w481 w961 w1799 w1800"></wbr>Dr. Martinez, I can honestly say that nothing <wbr class="w480 w960"></wbr>has changed for me. I still love coming to work <wbr class="w481 w961 w1799"></wbr>and doing <wbr class="w480 w960"></wbr>what I do. I look <wbr class="w1800"></wbr>forward to retiring with Dr. Martinez in 40 <wbr class="w480 w960"></wbr>years. </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_decoration w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="b105693f-3f4f-451a-8df4-d80608961308" itemtype="text" diff_index="1" index="column" kind="stack" score="2.625" missed="0.375" tag="article" id="u-b105693f-3f4f-451a-8df4-d80608961308"><div kind="group" index="column" class="group column group column" id="u-b105693f-3f4f-451a-8df4-d80608961308-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-b105693f-3f4f-451a-8df4-d80608961308-g-column-t-paragraph"><p><span class="first-letter"> </span>Alexander Duran Dental Assistant When I joined the team, I <wbr class="w480 w960"></wbr>was welcomed by both our <wbr class="w481 w961 w1799"></wbr>lovely patients and staff. After I <wbr class="w480 w960 w1800"></wbr>graduated from Sunset High School in 2002, I went from <wbr class="w1799"></wbr>job <wbr class="w480 w481 w960 w961"></wbr>to job trying to find a field. Then in 2004, I was hired at my <wbr class="w480 w960 w1800"></wbr>first dental office. My job was <wbr class="w1799"></wbr>to <wbr class="w481 w961"></wbr>make sure all instruments <wbr class="w480 w960"></wbr>and rooms were clean. A few months in, I was trusted to work <wbr class="w480 w960 w1799 w1800"></wbr>on <wbr class="w481 w961"></wbr>my very first patient. I never wanted to stop learning after <wbr class="w480 w960"></wbr>that. I live here in Duncanville <wbr class="w1799"></wbr>with <wbr class="w481 w961"></wbr>my fiance Kristine, and my <wbr class="w480 w960 w1800"></wbr>beautiful newborn son Sonny James. Watch out for him, he <wbr class="w480 w960 w1799"></wbr>may <wbr class="w481 w961"></wbr>be a Dallas Maverick or Cowboy soon! Kris and I are <wbr class="w480 w960 w1800"></wbr>concert junkies and watch and <wbr class="w1799"></wbr>listen to <wbr class="w481 w961"></wbr>all types of music. <wbr class="w480 w960"></wbr>Her open mind for music is one of the many things that <wbr class="w480 w960"></wbr>made <wbr class="w1799 w1800"></wbr>me fall in <wbr class="w481 w961"></wbr>love with her. Even though she hates seeing <wbr class="w480 w960"></wbr>me with short hair, she understands <wbr class="w1799"></wbr>that it's <wbr class="w481 w961"></wbr>donated to kids <wbr class="w480 w960"></wbr>with <wbr class="w1800"></wbr>cancer. I hope our son has the same open mind and care <wbr class="w480 w960"></wbr>for <wbr class="w1799"></wbr>others as <wbr class="w481 w961"></wbr>his parents. I&#x2019;m glad to have found such a <wbr class="w480 w960 w1800"></wbr>wonderful office full of great caring <wbr class="w1799"></wbr>people to <wbr class="w481 w961"></wbr>work with. I <wbr class="w480 w960"></wbr>know that working with a doctor as dedicated as Dr. Martinez <wbr class="w480 w960 w1800"></wbr>will <wbr class="w1799"></wbr>only make me <wbr class="w481 w961"></wbr>a better assistant. I appreciate all the extra <wbr class="w480 w960"></wbr>time he takes to answer the <wbr class="w1799"></wbr>questions I have, and <wbr class="w481 w961"></wbr>his <wbr class="w1800"></wbr>subtle <wbr class="w480 w960"></wbr>reminders of his gratitude for the hard work we all put in at <wbr class="w480 w960 w1799"></wbr>the office. Our goal <wbr class="w481 w961"></wbr>will always be to make sure our <wbr class="w1800"></wbr>patients <wbr class="w480 w960"></wbr>have the most pleasant <wbr class="w1799"></wbr>experience.</p></div></div></article><article subject="panel" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_decoration w_headline w_title w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-alternate-g-heading-t-headline-a">Glow Family Dental feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_short_paragraph w_short_text w_long_paragraph w_long_text layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-3-l-one"></div><style id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-color">body{background-color: rgba(17, 22, 39, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_short_paragraph w_short_text w_long_paragraph w_long_text layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-3-l-one"></div><style id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-color">body{background-color: rgba(17, 22, 39, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+}</style></head><body><div class="layout-system rust mobile" id="page-9162c24c-2b7c-4266-adce-2ae77a41e88a"><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_short_paragraph w_short_text w_long_paragraph w_long_text layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-mobile-l-one-3-l-one"></div><style id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-color">body{background-color: rgba(17, 22, 39, 1)}</style></section><article subject="panel" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_decoration w_headline w_title w_short_headline w_short_title stack heading" itemid="u-page-nav" itemtype="nav" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-nav"><div kind="group" index="heading" class="group heading group heading" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-nav-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-nav-g-heading-t-headline"><a class="text-decoration" href="../index.html" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-nav-g-heading-t-headline-a">Glow Family Dental</a></h1></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_large chapter stack column i first_chapter w_decoration w_paragraph w_text w_short_paragraph w_short_text stack column" itemid="8903592d-e512-414c-86df-83b295b31449" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-8903592d-e512-414c-86df-83b295b31449"><div kind="group" index="column" class="group column group column" id="u-8903592d-e512-414c-86df-83b295b31449-g-column"><div kind="text" index="paragraph" class="text-decoration short short_paragraph short_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-8903592d-e512-414c-86df-83b295b31449-g-column-t-paragraph"><p><span class="first-letter">K</span>aren Contreras </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_decoration w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="f3920cac-4d4a-4037-ba1c-953af47742f9" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-f3920cac-4d4a-4037-ba1c-953af47742f9"><div kind="group" index="column" class="group column group column" id="u-f3920cac-4d4a-4037-ba1c-953af47742f9-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-f3920cac-4d4a-4037-ba1c-953af47742f9-g-column-t-paragraph"><p><span class="first-letter"> </span>Office Administrator I've worked at this practice as front <wbr class="w480 w960"></wbr>office manager since 1999. I can't <wbr class="w481 w961 w1799"></wbr>wait to see our patients <wbr class="w480 w960"></wbr>each <wbr class="w1800"></wbr>day so that we can catch up! I consider them to be <wbr class="w480 w960"></wbr>friends <wbr class="w1799"></wbr>and <wbr class="w481 w961"></wbr>enjoy hearing about their families, sharing <wbr class="w480 w960"></wbr>pictures and <wbr class="w1800"></wbr>helping them in any way that I <wbr class="w1799"></wbr>can. I <wbr class="w481 w961"></wbr>really enjoy <wbr class="w480 w960"></wbr>making people happy! My husband Greg and I moved to <wbr class="w480 w960"></wbr>Duncanville in <wbr class="w1799 w1800"></wbr>1981 <wbr class="w481 w961"></wbr>from Southern California. We raised 3 <wbr class="w480 w960"></wbr>children here, all of whom graduated from <wbr class="w481 w961 w1799"></wbr>Duncanville High <wbr class="w480 w960"></wbr>School. My 2 <wbr class="w1800"></wbr>oldest children, Alyssa and Evan, graduated <wbr class="w480 w960"></wbr>from college <wbr class="w481 w961"></wbr>and <wbr class="w1799"></wbr>have families of their own. Greg and I now <wbr class="w480 w960"></wbr>have 3 <wbr class="w1800"></wbr>grandsons, Cameron, Coy Brice and <wbr class="w481 w961"></wbr>Gabe <wbr class="w1799"></wbr>who we <wbr class="w480 w960"></wbr>spend as much time with as possible. Our youngest son, <wbr class="w480 w960"></wbr>Brice, <wbr class="w1800"></wbr>attended <wbr class="w481 w961"></wbr>college <wbr class="w1799"></wbr>where he played for the soccer team. <wbr class="w480 w960"></wbr>Last year he was tragically killed by a drunk <wbr class="w481 w961"></wbr>driver. <wbr class="w1799"></wbr>Our family <wbr class="w480 w960"></wbr>will <wbr class="w1800"></wbr>forever miss him. I love my job and the people I work with <wbr class="w480 w960"></wbr>because we <wbr class="w481 w961"></wbr>all <wbr class="w1799"></wbr>work toward the common goal of <wbr class="w480 w960 w1800"></wbr>EXCELLENCE. The quality of dentistry that Dr. Martinez <wbr class="w480 w481 w960 w961 w1799"></wbr>demonstrates every day makes me so proud to say that I <wbr class="w480 w960"></wbr>work <wbr class="w1800"></wbr>for him at this office! </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_decoration w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="3fd63ef5-8160-4a95-849d-840ed42be57d" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-3fd63ef5-8160-4a95-849d-840ed42be57d"><div kind="group" index="column" class="group column group column" id="u-3fd63ef5-8160-4a95-849d-840ed42be57d-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-3fd63ef5-8160-4a95-849d-840ed42be57d-g-column-t-paragraph"><p><span class="first-letter"> </span>Lori Cernosek Hygienist I am both proud and blessed to have <wbr class="w480 w960"></wbr>been a part of this <wbr class="w481 w961 w1799"></wbr>extraordinary Practice for the past 26 <wbr class="w480 w960 w1800"></wbr>years. I never imagined being at one office this long, <wbr class="w481 w961 w1799"></wbr>now I <wbr class="w480 w960"></wbr>am very excited to continue my career with Dr. Martinez. I <wbr class="w480 w960 w1800"></wbr>expect this next chapter to <wbr class="w481 w961 w1799"></wbr>be as enjoyable and fulfilling as <wbr class="w480 w960"></wbr>the previous years have been. I love my work, staff and <wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>patients immensely, which makes coming to the office a joy. I <wbr class="w480 w960"></wbr>graduated from Baylor <wbr class="w481 w961 w1799"></wbr>College of Dentistry with a Bachelor <wbr class="w480 w960 w1800"></wbr>of Science in Dental Hygiene in 1985. My husband, <wbr class="w1799"></wbr>Ben, <wbr class="w481 w961"></wbr>and I <wbr class="w480 w960"></wbr>have been married for 28 wonderful years. We have two <wbr class="w480 w960 w1800"></wbr>amazing grown children. <wbr class="w1799"></wbr>Our <wbr class="w481 w961"></wbr>oldest, Cole, lives and works in <wbr class="w480 w960"></wbr>Houston in the petroleum industry. Abby, now a <wbr class="w1799"></wbr>graduate of <wbr class="w480 w481 w960 w961 w1800"></wbr>the University Of Texas Nursing School, works for a children's <wbr class="w480 w960"></wbr>hospital in <wbr class="w1799"></wbr>Austin. I enjoy <wbr class="w481 w961"></wbr>spending time with family and <wbr class="w480 w960 w1800"></wbr>friends and just about anything outdoors, <wbr class="w1799"></wbr>especially <wbr class="w480 w481 w960 w961"></wbr>gardening. I strive to give my patients the best possible <wbr class="w480 w960"></wbr>experience <wbr class="w1800"></wbr>through <wbr class="w1799"></wbr>quality care and <wbr class="w481 w961"></wbr>service. Our staff is <wbr class="w480 w960"></wbr>committed to every patient that walks through our <wbr class="w1799"></wbr>door. A <wbr class="w480 w960"></wbr>happy and <wbr class="w481 w961"></wbr>healthy <wbr class="w1800"></wbr>smile is truly the best compliment I can <wbr class="w480 w960"></wbr>ever receive. </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i w_decoration w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="b35dca97-6c20-4aae-a741-4e1749bb8087" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-b35dca97-6c20-4aae-a741-4e1749bb8087"><div kind="group" index="column" class="group column group column" id="u-b35dca97-6c20-4aae-a741-4e1749bb8087-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-b35dca97-6c20-4aae-a741-4e1749bb8087-g-column-t-paragraph"><p><span class="first-letter"> </span>Judy Bean </p><p><span class="first-letter"> </span><wbr class="w480 w481 w960 w961 w1799 w1800"></wbr>Treatment Coordinator I&#x2019;m on my second &#x201C;Tour of Duty&#x201D; with <wbr class="w480 w960"></wbr>Dr. Malone. I first worked with <wbr class="w481 w961 w1799"></wbr>him in 1992, but left in 1997 <wbr class="w1800"></wbr>to <wbr class="w480 w960"></wbr>pursue my own business. In 2001, I received a phone call <wbr class="w480 w481 w960 w961 w1799"></wbr>from Dr. Malone begging me to come back and I&#x2019;ve been <wbr class="w480 w960 w1800"></wbr>assisting him ever since! I have <wbr class="w481 w961 w1799"></wbr>been blessed with four <wbr class="w480 w960"></wbr>wonderful children, who continue to make me proud every <wbr class="w480 w960"></wbr>day. In <wbr class="w481 w961 w1799 w1800"></wbr>addition, I am &#x201C;Nana&#x201D; to five grandchildren, four rough <wbr class="w480 w960"></wbr>and tumble boys, Kaleb, Graham, Ty <wbr class="w481 w961 w1799"></wbr>and Knox and my little <wbr class="w480 w960"></wbr>princess <wbr class="w1800"></wbr>Austin. They are the light of my life! I work here <wbr class="w480 w960"></wbr>because I <wbr class="w481 w961 w1799"></wbr>love it! We have fun every day and I love everyone I <wbr class="w480 w960"></wbr>work with. <wbr class="w1800"></wbr>I&#x2019;ve been a dental assistant <wbr class="w481 w961 w1799"></wbr>since I was 16 years <wbr class="w480 w960"></wbr>old. I can honestly say, &#x201C;Dr. Malone is the very best&#x201D;. Now <wbr class="w480 w960"></wbr>that we have <wbr class="w481 w961 w1799 w1800"></wbr>Dr. Martinez, I can honestly say that nothing <wbr class="w480 w960"></wbr>has changed for me. I still love coming to work <wbr class="w481 w961 w1799"></wbr>and doing <wbr class="w480 w960"></wbr>what I do. I look <wbr class="w1800"></wbr>forward to retiring with Dr. Martinez in 40 <wbr class="w480 w960"></wbr>years. </p></div></div></article><article subject="chapter" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_stretch collapsed full line_padding_aside_inside text_width_wider group_h_align_center text_align_left flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_article chapter stack column i last_chapter w_decoration w_paragraph w_text w_long_paragraph w_long_text stack column" itemid="b105693f-3f4f-451a-8df4-d80608961308" itemtype="text" diff_index="1" index="column" kind="stack" score="0.625" missed="0.375" tag="article" id="u-b105693f-3f4f-451a-8df4-d80608961308"><div kind="group" index="column" class="group column group column" id="u-b105693f-3f4f-451a-8df4-d80608961308-g-column"><div kind="text" index="paragraph" class="text-decoration long long_paragraph long_text text paragraph vfld-leader vfld-trailer text paragraph" specificity="0.25" itemprop="text" id="u-b105693f-3f4f-451a-8df4-d80608961308-g-column-t-paragraph"><p><span class="first-letter"> </span>Alexander Duran Dental Assistant When I joined the team, I <wbr class="w480 w960"></wbr>was welcomed by both our <wbr class="w481 w961 w1799"></wbr>lovely patients and staff. After I <wbr class="w480 w960 w1800"></wbr>graduated from Sunset High School in 2002, I went from <wbr class="w1799"></wbr>job <wbr class="w480 w481 w960 w961"></wbr>to job trying to find a field. Then in 2004, I was hired at my <wbr class="w480 w960 w1800"></wbr>first dental office. My job was <wbr class="w1799"></wbr>to <wbr class="w481 w961"></wbr>make sure all instruments <wbr class="w480 w960"></wbr>and rooms were clean. A few months in, I was trusted to work <wbr class="w480 w960 w1799 w1800"></wbr>on <wbr class="w481 w961"></wbr>my very first patient. I never wanted to stop learning after <wbr class="w480 w960"></wbr>that. I live here in Duncanville <wbr class="w1799"></wbr>with <wbr class="w481 w961"></wbr>my fiance Kristine, and my <wbr class="w480 w960 w1800"></wbr>beautiful newborn son Sonny James. Watch out for him, he <wbr class="w480 w960 w1799"></wbr>may <wbr class="w481 w961"></wbr>be a Dallas Maverick or Cowboy soon! Kris and I are <wbr class="w480 w960 w1800"></wbr>concert junkies and watch and <wbr class="w1799"></wbr>listen to <wbr class="w481 w961"></wbr>all types of music. <wbr class="w480 w960"></wbr>Her open mind for music is one of the many things that <wbr class="w480 w960"></wbr>made <wbr class="w1799 w1800"></wbr>me fall in <wbr class="w481 w961"></wbr>love with her. Even though she hates seeing <wbr class="w480 w960"></wbr>me with short hair, she understands <wbr class="w1799"></wbr>that it's <wbr class="w481 w961"></wbr>donated to kids <wbr class="w480 w960"></wbr>with <wbr class="w1800"></wbr>cancer. I hope our son has the same open mind and care <wbr class="w480 w960"></wbr>for <wbr class="w1799"></wbr>others as <wbr class="w481 w961"></wbr>his parents. I&#x2019;m glad to have found such a <wbr class="w480 w960 w1800"></wbr>wonderful office full of great caring <wbr class="w1799"></wbr>people to <wbr class="w481 w961"></wbr>work with. I <wbr class="w480 w960"></wbr>know that working with a doctor as dedicated as Dr. Martinez <wbr class="w480 w960 w1800"></wbr>will <wbr class="w1799"></wbr>only make me <wbr class="w481 w961"></wbr>a better assistant. I appreciate all the extra <wbr class="w480 w960"></wbr>time he takes to answer the <wbr class="w1799"></wbr>questions I have, and <wbr class="w481 w961"></wbr>his <wbr class="w1800"></wbr>subtle <wbr class="w480 w960"></wbr>reminders of his gratitude for the hard work we all put in at <wbr class="w480 w960 w1799"></wbr>the office. Our goal <wbr class="w481 w961"></wbr>will always be to make sure our <wbr class="w1800"></wbr>patients <wbr class="w480 w960"></wbr>have the most pleasant <wbr class="w1799"></wbr>experience.</p></div></div></article><article subject="panel" class="col-1 export-linebreaks uninverted vertical not_decorated color_adjust_none color_styles_no_group_bg color_schema_default stack_transparency_off v_emphasis_none h_emphasis_none group_overlap_none stack_v_outset_none stack_v_inset_none stack_h_outset_none stack_h_inset_xsmall stack_h_align_center collapsed full line_padding_aside_inside text_width_full group_h_align_none text_align_center flow_unreversed group_v_outset_none group_v_inset_none group_h_outset_none group_h_inset_xsmall flow_vertical font_size_small panel stack heading i first_panel last_panel w_decoration w_headline w_title w_short_headline w_short_title stack heading" itemid="u-page-alternate" itemtype="alternate" diff_index="2" index="heading" kind="stack" score="1.875" missed="0.125" tag="article" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-alternate"><div kind="group" index="heading" class="group heading group heading" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-alternate-g-heading"><h1 kind="title" index="headline" class="short short_headline short_title title headline vfld-leader vfld-trailer title headline" specificity="0.25" itemprop="title" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-alternate-g-heading-t-headline"><a class="text-decoration" href="../rss.xml" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-alternate-g-heading-t-headline-a">Glow Family Dental feed</a></h1></div></article><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_short_paragraph w_short_text w_long_paragraph w_long_text layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-desktop-l-one-3-l-one"></div><style id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-color">body{background-color: rgba(17, 22, 39, 1)}</style></section><section kind="layout" style="position: relative" sequence="one" role="header" diff_index="0" index="one" class="layout one i first_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout header layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="article" diff_index="0" index="one" class="layout one i w_paragraph w_text w_short_paragraph w_short_text w_long_paragraph w_long_text layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-2"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_texts colors-use-same-as-previous layout one i first_layout last_layout article layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-2-l-one"></div></section><section kind="layout" style="position: relative" sequence="one" role="footer" diff_index="0" index="one" class="layout one i last_layout w_headline w_title w_separator w_decoration w_leader w_trailer w_icon w_short_headline w_short_title layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-3"><div kind="layout" style="position: relative" sequence="one" diff_index="0" index="one" class="colors-use-local w_titles layout one i first_layout last_layout footer layout one" id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-cinema-l-one-3-l-one"></div><style id="u-9162c24c-2b7c-4266-adce-2ae77a41e88a-color">body{background-color: rgba(17, 22, 39, 1)}</style></section></div><script href="./client.js">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*! Hammer.JS - v1.1.3 - 2014-05-20
  * http://eightmedia.github.io/hammer.js
  *
@@ -1586,9 +1621,11 @@ global.Hamburger = require('./hamburger');
 
 global.Highlighter = require('./highlighter');
 
+global.Player = require('./player');
+
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
+},{"./animator":3,"./hamburger":4,"./highlighter":5,"./paginator":7,"./player":8,"hammerjs/hammer.min.js":1,"picturefill/dist/picturefill.min.js":2}],7:[function(require,module,exports){
 var appendPage, mainpage, page, ref, ref1, urls;
 
 page = require('./reflow');
@@ -1689,7 +1726,192 @@ module.exports = function() {
 };
 
 
-},{"./reflow":8}],8:[function(require,module,exports){
+},{"./reflow":9}],8:[function(require,module,exports){
+var Player, Youtube, iframe, revealed, rgb2hex;
+
+iframe = null;
+
+Youtube = null;
+
+Player = function(id, src, width, height, color, bg) {
+  if (src.indexOf('youtube') > -1) {
+    src += '&color=white&theme=light&modestbranding=1';
+  }
+  src = src.replace('COLOR', color).replace('BG', bg);
+  if (location.protocol !== 'https:') {
+    src = src.replace('https:', 'http:');
+  }
+  iframe = document.createElement('iframe');
+  iframe.id = id;
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.left = 0;
+  iframe.style.right = 0;
+  iframe.style.position = 'absolute';
+  iframe.style.opacity = 0.2;
+  iframe.onload = function() {
+    return iframe.style.opacity = 1;
+  };
+  return iframe;
+};
+
+revealed = null;
+
+Player.reveal = function(iframe) {
+  var diff, i, left, len, parent, play, ref, ref1, sibling, target, top, translateX, translateY;
+  while (target = (target || iframe).parentNode) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (target.parentNode.classList.contains('group')) {
+        parent = target.parentNode;
+      } else {
+        parent = target;
+      }
+      revealed = iframe;
+      play = parent.getElementsByClassName('play')[0];
+      left = target.offsetWidth - play.offsetLeft - play.offsetWidth;
+      top = -play.offsetTop;
+      play.style.webkitTransformOrigin = 'top right';
+      play.style.webkitTransform = 'translateX(' + left + 'px) translateY(' + top + 'px) scale(0.5)';
+      target.classList.add('revealed');
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        if (sibling.nodeType === 1 && sibling !== parent) {
+          translateX = translateY = null;
+          if ((diff = sibling.offsetLeft + sibling.offsetWidth - parent.offsetLeft) > 2 && parent.offsetLeft >= sibling.offsetLeft) {
+            translateX = -diff;
+          }
+          if ((diff = target.offsetLeft + target.offsetWidth - sibling.offsetLeft) > 2 && parent.offsetLeft <= sibling.offsetLeft) {
+            if (!translateX || Math.abs(diff) < Math.abs(translateX)) {
+              translateX = diff;
+            }
+          }
+          if ((diff = sibling.offsetTop + sibling.offsetHeight - parent.offsetTop) > 2 && parent.offsetTop >= sibling.offsetTop) {
+            translateY = -diff;
+          }
+          if ((diff = target.offsetTop + target.offsetHeight - sibling.offsetTop) > 2 && parent.offsetTop <= sibling.offsetTop) {
+            if (!translateY || Math.abs(diff) < Math.abs(translateY)) {
+              translateY = diff;
+            }
+          }
+          if (Math.abs(translateX) > Math.abs(translateY)) {
+            sibling.style.webkitTransform = 'translateY(' + translateY + 'px)';
+          } else {
+            sibling.style.webkitTransform = 'translateX(' + translateX + 'px)';
+          }
+          console.log(translateX, translateY, sibling);
+        }
+      }
+    }
+  }
+};
+
+Player.hide = function(iframe) {
+  var i, len, parent, play, ref, ref1, sibling;
+  while (parent = (parent || iframe).parentNode) {
+    if ((ref = parent.classList) != null ? ref.contains('revealed') : void 0) {
+      parent.classList.remove('revealed');
+      if (parent.parentNode.classList.contains('group')) {
+        parent = parent.parentNode;
+      }
+      play = parent.getElementsByClassName('play')[0];
+      play.style.webkitTransform = '';
+      ref1 = parent.parentNode.childNodes;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        sibling = ref1[i];
+        sibling.style.webkitTransform = '';
+      }
+    }
+  }
+  return revealed = null;
+};
+
+window.addEventListener('resize', function() {
+  return setTimeout(function() {
+    return requestAnimationFrame(function() {
+      if (revealed) {
+        if (revealed.offsetWidth) {
+          return Player.reveal(revealed);
+        } else {
+          return Player.stop(revealed);
+        }
+      }
+    });
+  }, 10);
+});
+
+Player.stop = function(iframe) {
+  var old;
+  old = iframe;
+  iframe.style.opacity = 0;
+  setTimeout(function() {
+    var ref;
+    return (ref = old.parentNode) != null ? ref.removeChild(old) : void 0;
+  }, 300);
+  Player.hide(iframe);
+  return iframe = null;
+};
+
+document.addEventListener('click', function(e) {
+  var bg, color, header, parent, play, ref, ref1, results, styles, target;
+  target = e.target;
+  results = [];
+  while (target) {
+    if ((ref = target.classList) != null ? ref.contains('media') : void 0) {
+      if (play = target.getElementsByClassName('play')[0]) {
+        if ((iframe != null ? iframe.parentNode : void 0) === target) {
+          Player.stop(iframe);
+        } else {
+          if (iframe) {
+            Player.stop(iframe);
+          }
+          color = bg = null;
+          header = (ref1 = target.parentNode.parentNode.getElementsByClassName('title')[0]) != null ? ref1.firstChild : void 0;
+          parent = header || play;
+          while (parent) {
+            if (parent.nodeType === 1) {
+              styles = window.getComputedStyle(parent);
+              if (styles.color.indexOf('rgba') === -1 || !styles.color.match(/,\s*0\)/)) {
+                if (color == null) {
+                  color = styles.color;
+                }
+              }
+              if (styles['background-color'].indexOf('rgba') === -1 || !styles['background-color'].match(/,\s*0\)/)) {
+                if (bg == null) {
+                  bg = styles['background-color'];
+                }
+              }
+            }
+            parent = parent.parentNode;
+          }
+          iframe = Player(play.id + '-player', play.getAttribute('data-src'), play.getAttribute('data-width'), play.getAttribute('data-height'), rgb2hex(color), rgb2hex(bg));
+          target.appendChild(iframe);
+          Player.reveal(iframe);
+        }
+        e.preventDefault();
+        break;
+      }
+    }
+    results.push(target = target.parentNode);
+  }
+  return results;
+});
+
+rgb2hex = function(rgb) {
+  rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+  if (rgb && rgb.length === 4) {
+    return ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2);
+  }
+};
+
+window.exports = window.Player = Player;
+
+
+},{}],9:[function(require,module,exports){
 module.exports = {
   reflow: function(container) {
     var counter, heights, hidden, hole, holed, holes, i, id, ids, index, j, k, l, last, layout, layouts, len, len1, len2, len3, m, mutations, name, node, ref, ref1, ref2, stack, stacks;
@@ -1954,7 +2176,7 @@ module.exports = function(callback) {
   } else {
     protocol = '';
   }
-  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.4/gss.document.parser.js";
+  url = protocol + "//cdn.thegrid.io/gss/gss-document/1.2.8/gss.document.parser.js";
   if (location.toString().indexOf('//localhost:8080') > -1) {
     return module.exports.load(protocol + "//localhost:8080/node_modules/gss-document/dist/gss.document.parser.js", callback, function() {
       return module.exports.load(url, callback);
